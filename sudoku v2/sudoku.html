@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sudoku</title>
+	<script src='sudoku.js'></script>
+  <link href='sudoku.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<center>
+
+		<br>
+		<br>
+		<div class="title">
+			SUDOKU
+		</div>
+		<br>
+
+		<table>
+
+			<tr>
+				<td>
+					<input group_="g1" class="cell1" id='id00' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g1" class="cell1" id='id01' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g1" class="cell1" id='id02' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g2" class="cell2" id='id03' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g2" class="cell2" id='id04' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g2" class="cell2" id='id05' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g3" class="cell1" id='id06' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g3" class="cell1" id='id07' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g3" class="cell1" id='id08' onchange='is_correct_num(this.id)'>
+				</td>				
+			</tr>
+
+			<tr>
+				<td>
+					<input group_="g1" class="cell1" id='id10' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g1" class="cell1" id='id11' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g1" class="cell1" id='id12' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g2" class="cell2" id='id13' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g2" class="cell2" id='id14' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g2" class="cell2" id='id15' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g3" class="cell1" id='id16' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g3" class="cell1" id='id17' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g3" class="cell1" id='id18' onchange='is_correct_num(this.id)'>
+				</td>	
+
+				<tr>
+				<td>
+					<input group_="g1" class="cell1" id='id20' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g1" class="cell1" id='id21' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g1" class="cell1" id='id22' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g2" class="cell2" id='id23' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g2" class="cell2" id='id24' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g2" class="cell2" id='id25' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g3" class="cell1" id='id26' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g3" class="cell1" id='id27' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g3" class="cell1" id='id28' onchange='is_correct_num(this.id)'>
+				</td>				
+			</tr>
+
+			<tr>
+				<td>
+					<input group_="g4" class="cell2" id='id30' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g4" class="cell2" id='id31' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g4" class="cell2" id='id32' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g5" class="cell1" id='id33' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g5" class="cell1" id='id34' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g5" class="cell1" id='id35' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g6" class="cell2" id='id36' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g6" class="cell2" id='id37' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g6" class="cell2" id='id38' onchange='is_correct_num(this.id)'>
+				</td>				
+			</tr>
+
+			<tr>
+				<td>
+					<input group_="g4" class="cell2" id='id40' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g4" class="cell2" id='id41' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g4" class="cell2" id='id42' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g5" class="cell1" id='id43' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g5" class="cell1" id='id44' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g5" class="cell1" id='id45' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g6" class="cell2" id='id46' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g6" class="cell2" id='id47' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g6" class="cell2" id='id48' onchange='is_correct_num(this.id)'>
+				</td>				
+			</tr>
+
+			<tr>
+				<td>
+					<input group_="g4" class="cell2" id='id50' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g4" class="cell2" id='id51' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g4" class="cell2" id='id52' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g5" class="cell1" id='id53' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g5" class="cell1" id='id54' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g5" class="cell1" id='id55' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g6" class="cell2" id='id56' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g6" class="cell2" id='id57' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g6" class="cell2" id='id58' onchange='is_correct_num(this.id)'>
+				</td>				
+			</tr>
+
+			<tr>
+				<td>
+					<input group_="g7" class="cell1" id='id60' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g7" class="cell1" id='id61' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g7" class="cell1" id='id62' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g8" class="cell2" id='id63' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g8" class="cell2" id='id64' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g8" class="cell2" id='id65' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g9" class="cell1" id='id66' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g9" class="cell1" id='id67' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g9" class="cell1" id='id68' onchange='is_correct_num(this.id)'>
+				</td>				
+			</tr>
+
+			<tr>
+				<td>
+					<input group_="g7" class="cell1" id='id70' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g7" class="cell1" id='id71' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g7" class="cell1" id='id72' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g8" class="cell2" id='id73' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g8" class="cell2" id='id74' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g8" class="cell2" id='id75' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g9" class="cell1" id='id76' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g9" class="cell1" id='id77' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g9" class="cell1" id='id78' onchange='is_correct_num(this.id)'>
+				</td>				
+			</tr>
+
+			<tr>
+				<td>
+					<input group_="g7" class="cell1" id='id80' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g7" class="cell1" id='id81' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g7" class="cell1" id='id82' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g8" class="cell2" id='id83' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g8" class="cell2" id='id84' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g8" class="cell2" id='id85' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g9" class="cell1" id='id86' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g9" class="cell1" id='id87' onchange='is_correct_num(this.id)'>
+				</td>
+				<td>
+					<input group_="g9" class="cell1" id='id88' onchange='is_correct_num(this.id)'>
+				</td>				
+			</tr>
+
+			</tr>
+		</table>
+
+		<br>
+
+    <table>
+      <tr>
+        <td> 
+        	<center>
+        		<input class="button1" type='button' value='Check' onclick='check()'>
+        	</center>
+        </td>
+      </tr>
+      <tr>
+      	<td>
+      		<input class="hints" id="mistake" type="checkbox" value="0" onchange='mistake()'> 
+      		<span style="font-weight: bold; font-size: 20px">Hints </span>
+			<br>
+			<br>
+      		<div style="font-weight: bold; font-size: 20px">New: </div>
+      		<hr />
+        	
+        </td>
+      </tr>
+      <tr>
+      	<td> 
+      		<input class="button1" type='button' value='Baby' onclick='restart(0)' > &nbsp;
+        	<input class="button1" type='button' value='Easy' onclick='restart(1)' > &nbsp;
+       	 	<input class="button1" type='button' value='Normal' onclick='restart(2)' > &nbsp;
+        	<input class="button1" type='button' value='Hard' onclick='restart(3)' >
+        </td>
+      </tr>
+    </table>
+
+    <br>
+
+    <h2><div id="error_div">
+
+    </div></h2>
+
+    <script>
+   		restart(2);
+   		console.log("cake is a lie");
+  	</script>
+
+	</center>
+	
+</body>
+</html>
