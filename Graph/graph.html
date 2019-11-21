@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script type="text/javascript" src="js/raphael-min.js">
+  </script>
+  <script type="text/javascript" src="js/dracula_graffle.js">
+  </script>
+  <script type="text/javascript" src="js/dracula_graph.js">
+  </script>
+
+
+    <link href='style.css' rel='stylesheet' type='text/css'>
+
+
+	<title>Graph</title>
+</head>
+<body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<header>
+		<center><h1>Solution of a transport problem</h1></center>
+		
+		<br>
+	</header>
+
+	<main>
+		<hr>
+		<div id="graph"> 
+
+		</div>
+	</main>
+	<nav>
+		<hr>
+		<br>
+		<div style="display: inline">P count:</div> <input class='new' id="setP" onchange='isV21(0)'> <br><br>
+		<div style="display: inline">C count:</div> <input class='new' id="setC" onchange='isV21(0)'> <br><br>
+		
+		<label class="container">
+			<input class="checkmark" id="new" type="checkbox" value="0" onchange='isV21(1)'> 
+      		<span class="checkmark">&nbsp&nbsp21. variation &nbsp&nbsp</span>
+      	</label>
+
+      	<br><br>
+
+		<input type="button" class="but" value="New" onclick="createNew();">
+		<br><br>
+		<hr>
+	</nav>
+
+
+	<script src="script.js"></script>
+
+</body>
+</html>
